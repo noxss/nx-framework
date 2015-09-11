@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+Options All -Indexes
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-z0-9_-]+)/([a-z0-9_-]+)?$ index.php?c=$1&a=$2 [L,QSA]
+RewriteRule ^([a-z0-9_-]+)/?$ index.php?c=$1 [L,QSA]
+
+#Example for new urls
+#RewriteRule ^HERE_CUSTOM_URL/(.*)/?$ index.php?c=HERE_CUSTOM_CONTROLLER&a=$1 [L,QSA]
