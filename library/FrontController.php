@@ -11,7 +11,7 @@ class FrontController
         require $lib.'ControllerBase.php';
         require $lib.'SPDO.php';
         require $lib.'View.php';
-        require $lib.'string_functions.php';
+        require $lib.'Functions.php';
 
         require 'config.php';
         
