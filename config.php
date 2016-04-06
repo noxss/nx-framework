@@ -6,7 +6,7 @@
   $config->set('modelsFolder', 'models/');					
   $config->set('viewsFolder_Default', 'views/default/'); //template directory
   $config->set('imgFolder', 'img/');
-  $config->set('baseURL', 'http://localhost/php-framework/'); //app root directory
+  $config->set('baseURL', 'http://'.$_SERVER["HTTP_HOST"]);
 
   //Database configuration
   $config->set('dbhost', 'localhost');
